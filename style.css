@@ -1,0 +1,108 @@
+/* Reset de estilos e configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para o container do formulário */
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+/* Estilos para o título do formulário */
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os campos de entrada de texto */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilos para o botão de envio */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para o rótulo do campo de seleção de sexo */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilos para a data de nascimento */
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Estilos para a mensagem de texto */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: none;
+}
+
+/* Estilos para o campo obrigatório */
+input:required,
+select:required,
+textarea:required {
+    border-color: #ff5e5e;
+}
+
+/* Estilos para mensagens de erro */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: #ff5e5e;
+}
+
+/* Estilos para mensagens de sucesso */
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: #5eff5e;
+}

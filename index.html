@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="formValidation()">
+            <h3>Contato</h3>
+            <input type="text" id="nome" placeholder="Nome" >
+            <input type="text" id="cpf" id="cpf"  placeholder="CPF">
+            <input type="number" id="idade" min="0" max="120" placeholder="Idade" >
+            <input type="email" id="email" placeholder="E-mail" >
+            <input type="text" id="cep" placeholder="CEP" >
+            <input type="text" id="endereco" placeholder="Endereço" >
+
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo" >
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+            <input type="date" id="data_nascimento" >
+            <textarea name="mensagem" id="mensagem" placeholder="Comentários" rows="4" ></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        cep.addEventListener('focusout', () => 
+        {
+            CEPValidation();
+        });
+    </script>
+</body>
+</html>
+
